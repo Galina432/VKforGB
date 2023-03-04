@@ -31,6 +31,7 @@ class NewsfeedViewController: UIViewController {
 
 extension NewsfeedViewController {
     func reloadData() {
+        
         tableView.reloadData()
     }
 }
@@ -59,8 +60,8 @@ extension NewsfeedViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell1", for: indexPath) as! NewsTableViewCell1
             
-//            let object = topPost[indexPath.row]
-//            cell.set(object: object)
+            //            let object = topPost[indexPath.row]
+            //            cell.set(object: object)
             cell.newsAvatarPost.image = UIImage(named: "alba")
             cell.newsNamePost.text = "Petrova Anastasia"
             cell.newsDatePost.text = "16/01/2023"
@@ -94,4 +95,5 @@ extension NewsfeedViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
     }
+    
 }
