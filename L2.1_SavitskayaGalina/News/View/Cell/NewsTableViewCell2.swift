@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class NewsTableViewCell2: UITableViewCell {
     
     var butttonClicked: (() -> (Void))!

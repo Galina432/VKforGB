@@ -8,6 +8,7 @@
 import UIKit
 import Foundation
 
+
 class NewsTableViewCell1: UITableViewCell {
     
     @IBOutlet weak var newsAvatarPost: UIImageView!

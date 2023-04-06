@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class NewsTableViewCell3: UITableViewCell {
 
     @IBOutlet weak var postImage: UIImageView?

@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+
 struct FeedResponseWrapped: Codable {
     var response: FeedResponse
 }

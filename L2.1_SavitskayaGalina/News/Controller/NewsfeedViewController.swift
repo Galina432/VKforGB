@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class NewsfeedViewController: UIViewController {
     
     var expandedcell:IndexSet = []
@@ -19,7 +20,6 @@ class NewsfeedViewController: UIViewController {
     var nextFrom = ""
     var isLoading = false
    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -130,7 +130,6 @@ extension NewsfeedViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.buttonText.isHidden = true
             }
             
-            
             let indexPath = IndexPath(row: 1, section: indexPath.section)
 
             if expandedcell.contains(indexPath.section) {
@@ -209,15 +208,9 @@ extension NewsfeedViewController: UITableViewDelegate, UITableViewDataSource {
                 DispatchQueue.main.async {
                     self.tableView.insertSections(indexSet, with: .automatic)
                 }
-                
             }
         }
-        
     }
-
-    
-    
-    
 }
 
 extension NewsfeedViewController: UITableViewDataSourcePrefetching {
