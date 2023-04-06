@@ -5,22 +5,22 @@
 //  Created by Galina on 05.05.2022.
 //
 
-import Foundation
-import UIKit
-
-class News {
-    let image: UIImage?
-    let name: String
-    let avatarImage: UIImage?
-    let avatarName: String
-    
-    init(image: UIImage? = nil, name: String, avatarImage: UIImage? = nil, avatarName: String) {
-        self.image = image
-        self.name = name
-        self.avatarImage = avatarImage
-        self.avatarName = avatarName
-    }
-}
+//import Foundation
+//import UIKit
+//
+//class News {
+//    let image: UIImage?
+//    let name: String
+//    let avatarImage: UIImage?
+//    let avatarName: String
+//    
+//    init(image: UIImage? = nil, name: String, avatarImage: UIImage? = nil, avatarName: String) {
+//        self.image = image
+//        self.name = name
+//        self.avatarImage = avatarImage
+//        self.avatarName = avatarName
+//    }
+//}
 
 
 //struct NewsPost {
