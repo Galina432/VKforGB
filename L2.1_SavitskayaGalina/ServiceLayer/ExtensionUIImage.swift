@@ -4,7 +4,7 @@
 //
 //  Created by emil kurbanov on 11.08.2022.
 //
-
+import Foundation
 import UIKit
 
 // загурзка картинок по URL
@@ -20,5 +20,24 @@ extension UIImageView {
             }
         }
     }
+    
+    func loadImage(_ imageUrl: String) {
+        
+        guard let url = URL(string: imageUrl) else {
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
+            guard let data = data else {
+                print("error", error?.localizedDescription ?? "not localizedDescription")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self?.image = UIImage(data: data)
+            }
+        }.resume()
+    }
 }
+
 
